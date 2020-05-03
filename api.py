@@ -23,4 +23,4 @@ def send(tx_hex):
     },
   )
   r.raise_for_status()
-  return r.text
+  return r.text.strip('"')
